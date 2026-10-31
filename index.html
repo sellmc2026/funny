@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illegal Dawg</title>
+
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+
+            background-image: url("illegal.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="illegalSound" src="illegal.mp3"></audio>
+
+    <script>
+        const sound = document.getElementById("illegalSound");
+
+        document.addEventListener("click", function() {
+            sound.currentTime = 0;
+            sound.play();
+        });
+    </script>
+
+</body>
+</html>
 
